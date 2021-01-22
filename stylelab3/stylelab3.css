@@ -6,11 +6,10 @@
 
 body{
 	background-color:#FFFFFF;
+	background-image:url('../pic/3.jpg');
 	color:blue;
 	
-
-	/*font-family: Tohama;*/
-	font-size:20px;
+	font-size:16px;
 	line-height: 1.7em;
 	
 }
@@ -35,7 +34,11 @@ a:active{
 	width: 60%;
 	margin:auto;
 }
-.boxmodel1{
+.boxmodel1{ 
+	 background-image:url('../pic/cloud.jpg');
+	 background-size:cover;
+	 height: 100%;
+	 overflow: hidden;
 	background-color:#F5F5DC;
 	color:#000000;
 	border-right: 10px black solid;
@@ -46,6 +49,7 @@ a:active{
 	border-width: 3px;
 	border-bottom-width: 10px;
 	border-top-style: solid;
+
 
 	 padding-top:20px;
 	 padding-right:20px;
@@ -59,6 +63,10 @@ a:active{
 }
 	
 	.boxmodel1 h1{
+
+		border: 2px solid blue;
+		padding-top: 20px;
+		padding-bottom: 20px;
 		font-family:Verdana;
 		font-style:italic;
 		text-decoration: underline;
@@ -97,12 +105,25 @@ a:active{
 		padding-bottom: 8px;
 		border-bottom:dotted 1px #008B8B;
 	}
+
+	
 	.boxmodel4 li{
 		padding-bottom: 8px;
 		border-bottom:dotted 1px #008B8B;
 		display:inline;
 	}
 
+	.selector ul{
+		padding:0;
+		padding-left: 20px;
+		list-style: none;
+		list-style:square;
+	}
+
+	.selector li{
+		padding-bottom: 8px;
+		border-bottom:dotted 1px #008B8B;
+	}
 
 	.survey label{
 		display:block;
@@ -121,17 +142,19 @@ a:active{
 	}
 
 	.position{
-		width: 1000px;
+		width: 1100px;
 		height: 200px;
-		border: 2px solid #DEB887;
 		margin-top: 15px;
 		position: relative;
 		margin-top: 50px;
-		background-image:url('../pic/1.jpg');
-		background-position: center;
-		background-repeat: no-repeat;
-
 	}
+
+.picture{
+	background-image:url('../pic/LBR.jpg');
+	padding-bottom: 250px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
 
 	.position h2{
 		position: absolute;
@@ -139,8 +162,38 @@ a:active{
 
 	}
 
+	/*Combining Two Selectors*/
 	.fixed{
 		position: fixed;
 		top: 500px
 	}
+
+	/*Descendant Combinator*/
+	div p{
+		background-color: grey;
+	}
+
+	/*Child Combinator*/
+	div > p{
+		background-color: grey;
+	}
+
+	/*General sibling combinator*/
+	 p ~ ul{
+		background-color:green;
+	}
+
+	/*Adjacent sibling combinator*/
+	div + p {
+		background-color: yellow;
+	} 
+
+	/*Selector List*/
+	 h3, p{
+		background-color: grey;
+	}
+
+
+
+
 
