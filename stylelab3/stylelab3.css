@@ -10,8 +10,8 @@ body{
 	
 
 	/*font-family: Tohama;*/
-	font-size:16px;
-	line-height: 1.5em;
+	font-size:20px;
+	line-height: 1.7em;
 	
 }
 
@@ -37,7 +37,7 @@ a:active{
 }
 .boxmodel1{
 	background-color:#F5F5DC;
-	color:#808000;
+	color:#000000;
 	border-right: 10px black solid;
 	border-left: 10px black solid;
 	border-top: 10px black solid;
@@ -97,6 +97,12 @@ a:active{
 		padding-bottom: 8px;
 		border-bottom:dotted 1px #008B8B;
 	}
+	.boxmodel4 li{
+		padding-bottom: 8px;
+		border-bottom:dotted 1px #008B8B;
+		display:inline;
+	}
+
 
 	.survey label{
 		display:block;
@@ -116,12 +122,15 @@ a:active{
 
 	.position{
 		width: 1000px;
-		height: 130px;
+		height: 200px;
 		border: 2px solid #DEB887;
 		margin-top: 15px;
 		position: relative;
 		margin-top: 50px;
-		background-image:url('../LBR.jpg');
+		background-image:url('../pic/1.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+
 	}
 
 	.position h2{
@@ -132,6 +141,6 @@ a:active{
 
 	.fixed{
 		position: fixed;
-		top: 400px
+		top: 500px
 	}
 
